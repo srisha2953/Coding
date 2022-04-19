@@ -11,6 +11,7 @@ ${seller_page_explore}  xpath://span[normalize-space()='Explore']
 ${explore}              link:Explore
 ${join}                 css:.cursor-pointer p
 ${lady_with_laptop}     css:.center-img
+${Sign_In}              link:Sign In
 
 *** Keywords ***
 To check that when user click on Become a seller button seller landing is displayed
@@ -30,3 +31,8 @@ To check that when user click on Join button buyer registration page is displaye
     switch window       NEW
     wait until element is visible       ${lady_with_laptop}
     page should contain     Create a new account
+
+To check that when user click on Sign In button Sign In as seller and Sign In as buyer
+    click element       ${Sign_In}
+    page should contain     Sign In as seller
+    page should contain     Sign In as buyer

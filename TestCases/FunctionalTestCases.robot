@@ -24,6 +24,7 @@ Explore button
     MainLandingPage.To check that when user click on Explore button marketplace dashborad is displayed
 
 Join button
-    MainLandingPage.
+    MainLandingPage.To check that when user click on Join button buyer registration page is displayed
 
-    To check that when user click on Join button buyer registration page is displayed
+Sign In button
+    MainLandingPage.To check that when user click on Sign In button Sign In as seller and Sign In as buyer

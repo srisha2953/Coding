@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.3 on win32)" generated="20220419 18:04:39.331" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.3 on win32)" generated="20220419 23:42:46.053" rpa="false" schemaversion="3">
 <suite id="s1" name="FunctionalTestCases" source="D:\Automation\Ofofo\TestCases\FunctionalTestCases.robot">
 <test id="s1-t1" name="Become a seller button" line="20">
 <kw name="Open the browser with ofofo landing page" library="Utility" type="SETUP">
@@ -7,51 +7,51 @@
 <arg>${browser_name}</arg>
 <arg>executable_path=../BrowserDrivers/${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220419 18:05:07.460" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220419 18:05:07.458" endtime="20220419 18:05:43.940"/>
+<msg timestamp="20220419 23:42:46.252" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220419 23:42:46.251" endtime="20220419 23:42:47.357"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${ofofo_landingpage_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220419 18:05:43.940" level="INFO">Opening url 'https://landingpage-dev.ofofo.io'</msg>
-<status status="PASS" starttime="20220419 18:05:43.940" endtime="20220419 18:05:46.632"/>
+<msg timestamp="20220419 23:42:47.358" level="INFO">Opening url 'https://landingpage-dev.ofofo.io'</msg>
+<status status="PASS" starttime="20220419 23:42:47.357" endtime="20220419 23:42:49.167"/>
 </kw>
-<status status="PASS" starttime="20220419 18:05:07.457" endtime="20220419 18:05:46.633"/>
+<status status="PASS" starttime="20220419 23:42:46.251" endtime="20220419 23:42:49.167"/>
 </kw>
 <kw name="To check that when user click on Become a seller button seller landing is displayed" library="MainLandingPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${become_a_seller}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220419 18:05:46.635" level="INFO">Clicking element 'css:.cursor-pointer.become-seller'.</msg>
-<status status="PASS" starttime="20220419 18:05:46.635" endtime="20220419 18:05:47.503"/>
+<msg timestamp="20220419 23:42:49.169" level="INFO">Clicking element 'css:.cursor-pointer.become-seller'.</msg>
+<status status="PASS" starttime="20220419 23:42:49.168" endtime="20220419 23:42:49.738"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>NEW</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220419 18:05:47.504" endtime="20220419 18:05:47.513"/>
+<status status="PASS" starttime="20220419 23:42:49.739" endtime="20220419 23:42:49.746"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${seller_page_explore}</arg>
 <arg>timeout=20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220419 18:05:47.514" endtime="20220419 18:05:48.575"/>
+<status status="PASS" starttime="20220419 23:42:49.746" endtime="20220419 23:42:50.608"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>You bring the solutions</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220419 18:05:48.595" level="INFO">Current page contains text 'You bring the solutions'.</msg>
-<status status="PASS" starttime="20220419 18:05:48.575" endtime="20220419 18:05:48.595"/>
+<msg timestamp="20220419 23:42:50.644" level="INFO">Current page contains text 'You bring the solutions'.</msg>
+<status status="PASS" starttime="20220419 23:42:50.609" endtime="20220419 23:42:50.644"/>
 </kw>
-<status status="PASS" starttime="20220419 18:05:46.634" endtime="20220419 18:05:48.596"/>
+<status status="PASS" starttime="20220419 23:42:49.168" endtime="20220419 23:42:50.645"/>
 </kw>
 <kw name="Close the browser" library="Utility" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220419 18:05:48.597" endtime="20220419 18:05:51.047"/>
+<status status="PASS" starttime="20220419 23:42:50.645" endtime="20220419 23:42:52.811"/>
 </kw>
-<status status="PASS" starttime="20220419 18:05:48.596" endtime="20220419 18:05:51.048"/>
+<status status="PASS" starttime="20220419 23:42:50.645" endtime="20220419 23:42:52.811"/>
 </kw>
-<status status="PASS" starttime="20220419 18:05:07.455" endtime="20220419 18:05:51.048"/>
+<status status="PASS" starttime="20220419 23:42:46.250" endtime="20220419 23:42:52.812"/>
 </test>
 <test id="s1-t2" name="Explore button" line="23">
 <kw name="Open the browser with ofofo landing page" library="Utility" type="SETUP">
@@ -59,50 +59,50 @@
 <arg>${browser_name}</arg>
 <arg>executable_path=../BrowserDrivers/${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220419 18:05:51.050" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220419 18:05:51.050" endtime="20220419 18:05:52.213"/>
+<msg timestamp="20220419 23:42:52.814" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220419 23:42:52.814" endtime="20220419 23:42:53.919"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${ofofo_landingpage_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220419 18:05:52.213" level="INFO">Opening url 'https://landingpage-dev.ofofo.io'</msg>
-<status status="PASS" starttime="20220419 18:05:52.213" endtime="20220419 18:05:55.166"/>
+<msg timestamp="20220419 23:42:53.919" level="INFO">Opening url 'https://landingpage-dev.ofofo.io'</msg>
+<status status="PASS" starttime="20220419 23:42:53.919" endtime="20220419 23:42:55.012"/>
 </kw>
-<status status="PASS" starttime="20220419 18:05:51.050" endtime="20220419 18:05:55.166"/>
+<status status="PASS" starttime="20220419 23:42:52.814" endtime="20220419 23:42:55.012"/>
 </kw>
 <kw name="To check that when user click on Explore button marketplace dashborad is displayed" library="MainLandingPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${explore}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220419 18:05:55.168" level="INFO">Clicking element 'link:Explore'.</msg>
-<status status="PASS" starttime="20220419 18:05:55.167" endtime="20220419 18:05:55.310"/>
+<msg timestamp="20220419 23:42:55.021" level="INFO">Clicking element 'link:Explore'.</msg>
+<status status="PASS" starttime="20220419 23:42:55.020" endtime="20220419 23:42:55.233"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>NEW</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220419 18:05:55.311" endtime="20220419 18:05:55.321"/>
+<status status="PASS" starttime="20220419 23:42:55.233" endtime="20220419 23:42:55.243"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Offerings</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220419 18:05:55.321" endtime="20220419 18:05:56.204"/>
+<status status="PASS" starttime="20220419 23:42:55.243" endtime="20220419 23:42:59.211"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Offerings</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220419 18:05:56.216" level="INFO">Current page contains text 'Offerings'.</msg>
-<status status="PASS" starttime="20220419 18:05:56.204" endtime="20220419 18:05:56.216"/>
+<msg timestamp="20220419 23:42:59.221" level="INFO">Current page contains text 'Offerings'.</msg>
+<status status="PASS" starttime="20220419 23:42:59.211" endtime="20220419 23:42:59.221"/>
 </kw>
-<status status="PASS" starttime="20220419 18:05:55.167" endtime="20220419 18:05:56.217"/>
+<status status="PASS" starttime="20220419 23:42:55.020" endtime="20220419 23:42:59.221"/>
 </kw>
 <kw name="Close the browser" library="Utility" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220419 18:05:56.218" endtime="20220419 18:05:58.410"/>
+<status status="PASS" starttime="20220419 23:42:59.222" endtime="20220419 23:43:01.395"/>
 </kw>
-<status status="PASS" starttime="20220419 18:05:56.217" endtime="20220419 18:05:58.410"/>
+<status status="PASS" starttime="20220419 23:42:59.221" endtime="20220419 23:43:01.395"/>
 </kw>
-<status status="PASS" starttime="20220419 18:05:51.049" endtime="20220419 18:05:58.411"/>
+<status status="PASS" starttime="20220419 23:42:52.813" endtime="20220419 23:43:01.395"/>
 </test>
 <test id="s1-t3" name="Join button" line="26">
 <kw name="Open the browser with ofofo landing page" library="Utility" type="SETUP">
@@ -110,70 +110,117 @@
 <arg>${browser_name}</arg>
 <arg>executable_path=../BrowserDrivers/${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220419 18:05:58.413" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220419 18:05:58.413" endtime="20220419 18:05:59.587"/>
+<msg timestamp="20220419 23:43:01.397" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220419 23:43:01.397" endtime="20220419 23:43:02.498"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${ofofo_landingpage_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220419 18:05:59.588" level="INFO">Opening url 'https://landingpage-dev.ofofo.io'</msg>
-<status status="PASS" starttime="20220419 18:05:59.588" endtime="20220419 18:06:02.117"/>
+<msg timestamp="20220419 23:43:02.499" level="INFO">Opening url 'https://landingpage-dev.ofofo.io'</msg>
+<status status="PASS" starttime="20220419 23:43:02.499" endtime="20220419 23:43:03.592"/>
 </kw>
-<status status="PASS" starttime="20220419 18:05:58.412" endtime="20220419 18:06:02.118"/>
+<status status="PASS" starttime="20220419 23:43:01.397" endtime="20220419 23:43:03.592"/>
 </kw>
 <kw name="To check that when user click on Join button buyer registration page is displayed" library="MainLandingPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${join}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220419 18:06:02.120" level="INFO">Clicking element 'css:.cursor-pointer p'.</msg>
-<status status="PASS" starttime="20220419 18:06:02.120" endtime="20220419 18:06:02.245"/>
+<msg timestamp="20220419 23:43:03.594" level="INFO">Clicking element 'css:.cursor-pointer p'.</msg>
+<status status="PASS" starttime="20220419 23:43:03.593" endtime="20220419 23:43:03.735"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>NEW</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220419 18:06:02.245" endtime="20220419 18:06:02.261"/>
+<status status="PASS" starttime="20220419 23:43:03.735" endtime="20220419 23:43:03.744"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${lady_with_laptop}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220419 18:06:02.261" endtime="20220419 18:06:04.282"/>
+<status status="PASS" starttime="20220419 23:43:03.744" endtime="20220419 23:43:05.374"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Create a new account</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220419 18:06:04.304" level="INFO">Current page contains text 'Create a new account'.</msg>
-<status status="PASS" starttime="20220419 18:06:04.282" endtime="20220419 18:06:04.304"/>
+<msg timestamp="20220419 23:43:05.389" level="INFO">Current page contains text 'Create a new account'.</msg>
+<status status="PASS" starttime="20220419 23:43:05.374" endtime="20220419 23:43:05.389"/>
 </kw>
-<status status="PASS" starttime="20220419 18:06:02.119" endtime="20220419 18:06:04.304"/>
+<status status="PASS" starttime="20220419 23:43:03.593" endtime="20220419 23:43:05.389"/>
 </kw>
 <kw name="Close the browser" library="Utility" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220419 18:06:04.312" endtime="20220419 18:06:06.564"/>
+<status status="PASS" starttime="20220419 23:43:05.391" endtime="20220419 23:43:07.556"/>
 </kw>
-<status status="PASS" starttime="20220419 18:06:04.312" endtime="20220419 18:06:06.564"/>
+<status status="PASS" starttime="20220419 23:43:05.390" endtime="20220419 23:43:07.556"/>
 </kw>
-<status status="PASS" starttime="20220419 18:05:58.412" endtime="20220419 18:06:06.565"/>
+<status status="PASS" starttime="20220419 23:43:01.397" endtime="20220419 23:43:07.557"/>
+</test>
+<test id="s1-t4" name="Sign In button" line="29">
+<kw name="Open the browser with ofofo landing page" library="Utility" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${browser_name}</arg>
+<arg>executable_path=../BrowserDrivers/${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220419 23:43:07.558" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220419 23:43:07.558" endtime="20220419 23:43:08.646"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${ofofo_landingpage_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220419 23:43:08.647" level="INFO">Opening url 'https://landingpage-dev.ofofo.io'</msg>
+<status status="PASS" starttime="20220419 23:43:08.647" endtime="20220419 23:43:09.521"/>
+</kw>
+<status status="PASS" starttime="20220419 23:43:07.558" endtime="20220419 23:43:09.522"/>
+</kw>
+<kw name="To check that when user click on Sign In button Sign In as seller and Sign In as buyer" library="MainLandingPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Sign_In}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220419 23:43:09.526" level="INFO">Clicking element 'link:Sign In'.</msg>
+<status status="PASS" starttime="20220419 23:43:09.525" endtime="20220419 23:43:09.723"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Sign In as seller</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220419 23:43:09.741" level="INFO">Current page contains text 'Sign In as seller'.</msg>
+<status status="PASS" starttime="20220419 23:43:09.723" endtime="20220419 23:43:09.741"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Sign In as buyer</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220419 23:43:09.757" level="INFO">Current page contains text 'Sign In as buyer'.</msg>
+<status status="PASS" starttime="20220419 23:43:09.741" endtime="20220419 23:43:09.757"/>
+</kw>
+<status status="PASS" starttime="20220419 23:43:09.525" endtime="20220419 23:43:09.757"/>
+</kw>
+<kw name="Close the browser" library="Utility" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220419 23:43:09.758" endtime="20220419 23:43:11.954"/>
+</kw>
+<status status="PASS" starttime="20220419 23:43:09.758" endtime="20220419 23:43:11.954"/>
+</kw>
+<status status="PASS" starttime="20220419 23:43:07.557" endtime="20220419 23:43:11.955"/>
 </test>
 <doc>This file consists of all the Functional Test cases</doc>
-<status status="PASS" starttime="20220419 18:04:39.980" endtime="20220419 18:06:06.566"/>
+<status status="PASS" starttime="20220419 23:42:46.055" endtime="20220419 23:43:11.956"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="FunctionalTestCases">FunctionalTestCases</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="FunctionalTestCases">FunctionalTestCases</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220419 18:05:07.444" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\SellerLandingPage.robot' is empty.</msg>
-<msg timestamp="20220419 18:05:07.446" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\SellerRegistrationPage.robot' is empty.</msg>
-<msg timestamp="20220419 18:05:07.448" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\SellerSignInPage.robot' is empty.</msg>
-<msg timestamp="20220419 18:05:07.449" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\SellerEntitySelectionPage.robot' is empty.</msg>
-<msg timestamp="20220419 18:05:07.451" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\BuyerRegistrationPage.robot' is empty.</msg>
-<msg timestamp="20220419 18:05:07.452" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\BuyerSignInPage.robot' is empty.</msg>
+<msg timestamp="20220419 23:42:46.242" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\SellerLandingPage.robot' is empty.</msg>
+<msg timestamp="20220419 23:42:46.243" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\SellerRegistrationPage.robot' is empty.</msg>
+<msg timestamp="20220419 23:42:46.244" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\SellerSignInPage.robot' is empty.</msg>
+<msg timestamp="20220419 23:42:46.245" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\SellerEntitySelectionPage.robot' is empty.</msg>
+<msg timestamp="20220419 23:42:46.246" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\BuyerRegistrationPage.robot' is empty.</msg>
+<msg timestamp="20220419 23:42:46.248" level="WARN">Imported resource file 'D:\Automation\Ofofo\PageObjects\BuyerSignInPage.robot' is empty.</msg>
 </errors>
 </robot>
