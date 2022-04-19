@@ -28,3 +28,9 @@ Join button
 
 Sign In button
     MainLandingPage.To check that when user click on Sign In button Sign In as seller and Sign In as buyer
+
+Search bar
+    MainLandingPage.To check that search bar accepts alphabets
+    MainLandingPage.To check that search bar accepts numbers
+    MainLandingPage.To check that search bar accepts alphanumeric values
+    MainLandingPage.To check that search bar accepts spaces
