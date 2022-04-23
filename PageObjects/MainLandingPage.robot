@@ -26,29 +26,16 @@ To check that when user click on Become a seller button seller landing is displa
 To check that when user click on Explore button marketplace dashborad is displayed
     click element       ${explore}
     switch window       NEW
-    wait until page contains    Offerings       timeout=20
+    wait until page contains    Offerings       timeout=2
     page should contain         Offerings
 
 To check that when user click on Join button buyer registration page is displayed
     click element       ${join}
     switch window       NEW
-    wait until element is visible       ${lady_with_laptop}         timeout=20
+    wait until element is visible       ${lady_with_laptop}         timeout=2
     page should contain     Create a new account
 
 To check that when user click on Sign In button Sign In as seller and Sign In as buyer
     click element       ${Sign_In}
     page should contain     Sign In as seller
     page should contain     Sign In as buyer
-
-To check that search bar accepts alphabets
-    input text      ${Search_bar}       ${Alpha_values}
-    ${received_value}=      get element attribute      ${Search_bar}        value
-    element text should be  ${Search_bar}   ${Alpha_values}
-
-To check that search bar accepts numbers
-
-
-To check that search bar accepts alphanumeric values
-
-
-To check that search bar accepts spaces
