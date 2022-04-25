@@ -14,8 +14,8 @@ ${terms_check_box}                            css:.checkmark-check
 ${register_button}                            css:.mt-3 button
 ${full_name_error_message}                    xpath:(//p[contains(@class,'error_message mb-0')])[1]
 ${email_error_message}                        xpath://p[text()=' Provide a valid Email id ']
-${password_error_message}                     xpath:(//p[contains(@class,'error_message mb-0')])[3]
-${confirm_password_error_message}             xpath:(//p[contains(@class,'error_message mb-0')])[4]
+${password_error_message}                     xpath://p[contains(text(),'Provide a valid Password')]
+${confirm_password_error_message}             xpath://p[contains(text(),'Password not matching')]
 ${terms_check_box_error}                      xpath:(//p[contains(@class,'error_message mb-0')])[5]
 ${temp_mail_url}                              https://tempmailo.com/
 ${copy_button}                                css:.iconx
@@ -75,5 +75,8 @@ Register by entering all the values
     click element                       ${copy_button}
     switch window                       MAIN
     press keys                          ${email}                 CTRL+v
-    sleep                               5
-    
+
+#   functional testing for Password Text box
+#   To check that password text box should not accept only upper case letter
+    input text              ${password}                     SRIHSAJOSHI
+    element should be visible           ${password_error_message}
