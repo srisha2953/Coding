@@ -79,4 +79,4 @@ Register by entering all the values
 #   functional testing for Password Text box
 #   To check that password text box should not accept only upper case letter
     input text              ${password}                     SRIHSAJOSHI
-    element should be visible           ${password_error_message}
+    element should be visible           ${password_error_message}           srisha
