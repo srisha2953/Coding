@@ -44,6 +44,7 @@ Register by entering all the values
     element should be visible               ${full_name_error_message}
 
 #   Going forward for entering values
+    clear element text      ${full_name}
     input text      ${full_name}            Srisha B Joshi
 
 #    Functional test cases for Email Text box
@@ -66,9 +67,13 @@ Register by entering all the values
     element should be visible               ${email_error_message}
 
 #   Going forward for entering values
+    clear element text          ${email}
     execute javascript          window.open('${temp_mail_url}')
     sleep       5
+    switch window               NEW
     wait until element is visible       ${copy_button}          timeout=10
     click element                       ${copy_button}
     switch window                       MAIN
+    press keys                          ${email}                 CTRL+v
+    sleep                               5
     

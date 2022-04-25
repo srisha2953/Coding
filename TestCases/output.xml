@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.3 on win32)" generated="20220421 03:05:20.429" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220425 10:03:34.357" rpa="false" schemaversion="3">
 <suite id="s1" name="SystemTestCases" source="D:\Automation\Ofofo\TestCases\SystemTestCases.robot">
 <test id="s1-t1" name="To check that seller is able to Register to the Ofofo platform" line="22">
 <kw name="open the browser" library="Utility" type="SETUP">
@@ -7,227 +7,275 @@
 <arg>${browser_name}</arg>
 <arg>executable_path=../BrowserDrivers/${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220421 03:05:20.671" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220421 03:05:20.670" endtime="20220421 03:05:21.765"/>
+<msg timestamp="20220425 10:03:34.594" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220425 10:03:34.594" endtime="20220425 10:03:35.764"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220421 03:05:21.765" endtime="20220421 03:05:21.896"/>
+<status status="PASS" starttime="20220425 10:03:35.765" endtime="20220425 10:03:35.877"/>
 </kw>
-<status status="PASS" starttime="20220421 03:05:20.670" endtime="20220421 03:05:21.896"/>
+<status status="PASS" starttime="20220425 10:03:34.593" endtime="20220425 10:03:35.877"/>
 </kw>
 <kw name="Goto to seller registration" library="SellerRegistrationPage">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://seller-dev.ofofo.io/registration</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220421 03:05:21.897" level="INFO">Opening url 'https://seller-dev.ofofo.io/registration'</msg>
-<status status="PASS" starttime="20220421 03:05:21.897" endtime="20220421 03:05:23.868"/>
+<msg timestamp="20220425 10:03:35.880" level="INFO">Opening url 'https://seller-dev.ofofo.io/registration'</msg>
+<status status="PASS" starttime="20220425 10:03:35.880" endtime="20220425 10:03:37.481"/>
 </kw>
-<status status="PASS" starttime="20220421 03:05:21.896" endtime="20220421 03:05:23.868"/>
+<status status="PASS" starttime="20220425 10:03:35.879" endtime="20220425 10:03:37.481"/>
 </kw>
 <kw name="Register by entering all the values" library="SellerRegistrationPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${full_name}</arg>
 <arg>timeout=10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220421 03:05:23.869" endtime="20220421 03:05:24.441"/>
+<status status="PASS" starttime="20220425 10:03:37.483" endtime="20220425 10:03:39.492"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${full_name}</arg>
 <arg>123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:24.441" level="INFO">Typing text '123' into text field 'id:firstName'.</msg>
-<status status="PASS" starttime="20220421 03:05:24.441" endtime="20220421 03:05:24.527"/>
+<msg timestamp="20220425 10:03:39.493" level="INFO">Typing text '123' into text field 'id:firstName'.</msg>
+<status status="PASS" starttime="20220425 10:03:39.493" endtime="20220425 10:03:39.600"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${full_name_error_message}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220421 03:05:24.554" level="INFO">Element 'xpath:(//p[contains(@class,'error_message mb-0')])[1]' is displayed.</msg>
-<status status="PASS" starttime="20220421 03:05:24.528" endtime="20220421 03:05:24.554"/>
+<msg timestamp="20220425 10:03:39.632" level="INFO">Element 'xpath:(//p[contains(@class,'error_message mb-0')])[1]' is displayed.</msg>
+<status status="PASS" starttime="20220425 10:03:39.600" endtime="20220425 10:03:39.632"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${full_name}</arg>
 <arg>%&amp;^%&amp;^&amp;%^&amp;%^</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:24.554" level="INFO">Typing text '%&amp;^%&amp;^&amp;%^&amp;%^' into text field 'id:firstName'.</msg>
-<status status="PASS" starttime="20220421 03:05:24.554" endtime="20220421 03:05:24.668"/>
+<msg timestamp="20220425 10:03:39.633" level="INFO">Typing text '%&amp;^%&amp;^&amp;%^&amp;%^' into text field 'id:firstName'.</msg>
+<status status="PASS" starttime="20220425 10:03:39.632" endtime="20220425 10:03:39.738"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${full_name_error_message}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220421 03:05:24.686" level="INFO">Element 'xpath:(//p[contains(@class,'error_message mb-0')])[1]' is displayed.</msg>
-<status status="PASS" starttime="20220421 03:05:24.668" endtime="20220421 03:05:24.686"/>
+<msg timestamp="20220425 10:03:39.801" level="INFO">Element 'xpath:(//p[contains(@class,'error_message mb-0')])[1]' is displayed.</msg>
+<status status="PASS" starttime="20220425 10:03:39.738" endtime="20220425 10:03:39.801"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${full_name}</arg>
 <arg>Srisha B Joshi</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:24.687" level="INFO">Typing text 'Srisha B Joshi' into text field 'id:firstName'.</msg>
-<status status="PASS" starttime="20220421 03:05:24.686" endtime="20220421 03:05:24.781"/>
+<msg timestamp="20220425 10:03:39.802" level="INFO">Typing text 'Srisha B Joshi' into text field 'id:firstName'.</msg>
+<status status="PASS" starttime="20220425 10:03:39.801" endtime="20220425 10:03:39.900"/>
 </kw>
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
 <arg>${full_name_error_message}</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20220421 03:05:24.788" level="INFO">Element 'xpath:(//p[contains(@class,'error_message mb-0')])[1]' did not exist.</msg>
-<status status="PASS" starttime="20220421 03:05:24.781" endtime="20220421 03:05:24.789"/>
+<msg timestamp="20220425 10:03:39.908" level="INFO">Element 'xpath:(//p[contains(@class,'error_message mb-0')])[1]' did not exist.</msg>
+<status status="PASS" starttime="20220425 10:03:39.901" endtime="20220425 10:03:39.908"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${full_name}</arg>
 <arg>Srisha B 8553</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:24.789" level="INFO">Typing text 'Srisha B 8553' into text field 'id:firstName'.</msg>
-<status status="PASS" starttime="20220421 03:05:24.789" endtime="20220421 03:05:24.886"/>
+<msg timestamp="20220425 10:03:39.909" level="INFO">Typing text 'Srisha B 8553' into text field 'id:firstName'.</msg>
+<status status="PASS" starttime="20220425 10:03:39.908" endtime="20220425 10:03:40.005"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${full_name_error_message}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220421 03:05:24.904" level="INFO">Element 'xpath:(//p[contains(@class,'error_message mb-0')])[1]' is displayed.</msg>
-<status status="PASS" starttime="20220421 03:05:24.886" endtime="20220421 03:05:24.904"/>
+<msg timestamp="20220425 10:03:40.106" level="INFO">Element 'xpath:(//p[contains(@class,'error_message mb-0')])[1]' is displayed.</msg>
+<status status="PASS" starttime="20220425 10:03:40.005" endtime="20220425 10:03:40.106"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${full_name}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220425 10:03:40.106" endtime="20220425 10:03:40.136"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${full_name}</arg>
 <arg>Srisha B Joshi</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:24.904" level="INFO">Typing text 'Srisha B Joshi' into text field 'id:firstName'.</msg>
-<status status="PASS" starttime="20220421 03:05:24.904" endtime="20220421 03:05:25.072"/>
+<msg timestamp="20220425 10:03:40.137" level="INFO">Typing text 'Srisha B Joshi' into text field 'id:firstName'.</msg>
+<status status="PASS" starttime="20220425 10:03:40.136" endtime="20220425 10:03:40.249"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email}</arg>
 <arg>Srisha@joshi.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:25.072" level="INFO">Typing text 'Srisha@joshi.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20220421 03:05:25.072" endtime="20220421 03:05:25.285"/>
+<msg timestamp="20220425 10:03:40.250" level="INFO">Typing text 'Srisha@joshi.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220425 10:03:40.249" endtime="20220425 10:03:40.488"/>
 </kw>
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
 <arg>${email_error_message}</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20220421 03:05:25.294" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' did not exist.</msg>
-<status status="PASS" starttime="20220421 03:05:25.285" endtime="20220421 03:05:25.294"/>
+<msg timestamp="20220425 10:03:40.501" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' did not exist.</msg>
+<status status="PASS" starttime="20220425 10:03:40.488" endtime="20220425 10:03:40.501"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email}</arg>
 <arg>srisha.joshi@gmail.co.in</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:25.294" level="INFO">Typing text 'srisha.joshi@gmail.co.in' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20220421 03:05:25.294" endtime="20220421 03:05:25.407"/>
+<msg timestamp="20220425 10:03:40.502" level="INFO">Typing text 'srisha.joshi@gmail.co.in' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220425 10:03:40.502" endtime="20220425 10:03:40.672"/>
 </kw>
 <kw name="Element Should Not Be Visible" library="SeleniumLibrary">
 <arg>${email_error_message}</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20220421 03:05:25.414" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' did not exist.</msg>
-<status status="PASS" starttime="20220421 03:05:25.407" endtime="20220421 03:05:25.414"/>
+<msg timestamp="20220425 10:03:40.678" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' did not exist.</msg>
+<status status="PASS" starttime="20220425 10:03:40.672" endtime="20220425 10:03:40.678"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email}</arg>
 <arg>Srisha Joshi</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:25.415" level="INFO">Typing text 'Srisha Joshi' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20220421 03:05:25.415" endtime="20220421 03:05:25.560"/>
+<msg timestamp="20220425 10:03:40.679" level="INFO">Typing text 'Srisha Joshi' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220425 10:03:40.679" endtime="20220425 10:03:40.759"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${email_error_message}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220421 03:05:25.656" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' is displayed.</msg>
-<status status="PASS" starttime="20220421 03:05:25.560" endtime="20220421 03:05:25.657"/>
+<msg timestamp="20220425 10:03:40.774" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' is displayed.</msg>
+<status status="PASS" starttime="20220425 10:03:40.760" endtime="20220425 10:03:40.774"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email}</arg>
 <arg>3132132132131</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:25.658" level="INFO">Typing text '3132132132131' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20220421 03:05:25.657" endtime="20220421 03:05:25.788"/>
+<msg timestamp="20220425 10:03:40.775" level="INFO">Typing text '3132132132131' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220425 10:03:40.775" endtime="20220425 10:03:40.852"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${email_error_message}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220421 03:05:26.081" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' is displayed.</msg>
-<status status="PASS" starttime="20220421 03:05:25.789" endtime="20220421 03:05:26.081"/>
+<msg timestamp="20220425 10:03:40.870" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' is displayed.</msg>
+<status status="PASS" starttime="20220425 10:03:40.853" endtime="20220425 10:03:40.870"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email}</arg>
 <arg>^%%&amp;*^&amp;)*((</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:26.081" level="INFO">Typing text '^%%&amp;*^&amp;)*((' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20220421 03:05:26.081" endtime="20220421 03:05:26.166"/>
+<msg timestamp="20220425 10:03:40.870" level="INFO">Typing text '^%%&amp;*^&amp;)*((' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220425 10:03:40.870" endtime="20220425 10:03:40.954"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${email_error_message}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220421 03:05:26.181" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' is displayed.</msg>
-<status status="PASS" starttime="20220421 03:05:26.166" endtime="20220421 03:05:26.181"/>
+<msg timestamp="20220425 10:03:40.968" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' is displayed.</msg>
+<status status="PASS" starttime="20220425 10:03:40.954" endtime="20220425 10:03:40.968"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email}</arg>
 <arg>Srisha@joshi@b.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:26.181" level="INFO">Typing text 'Srisha@joshi@b.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20220421 03:05:26.181" endtime="20220421 03:05:26.263"/>
+<msg timestamp="20220425 10:03:40.969" level="INFO">Typing text 'Srisha@joshi@b.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220425 10:03:40.968" endtime="20220425 10:03:41.058"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${email_error_message}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220421 03:05:26.278" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' is displayed.</msg>
-<status status="PASS" starttime="20220421 03:05:26.263" endtime="20220421 03:05:26.279"/>
+<msg timestamp="20220425 10:03:41.074" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' is displayed.</msg>
+<status status="PASS" starttime="20220425 10:03:41.059" endtime="20220425 10:03:41.074"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email}</arg>
 <arg>Srisha.joshi@gmail.com.com.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220421 03:05:26.279" level="INFO">Typing text 'Srisha.joshi@gmail.com.com.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20220421 03:05:26.279" endtime="20220421 03:05:26.378"/>
+<msg timestamp="20220425 10:03:41.075" level="INFO">Typing text 'Srisha.joshi@gmail.com.com.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220425 10:03:41.074" endtime="20220425 10:03:41.177"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${email_error_message}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20220421 03:05:26.392" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' is displayed.</msg>
-<status status="PASS" starttime="20220421 03:05:26.378" endtime="20220421 03:05:26.392"/>
+<msg timestamp="20220425 10:03:41.194" level="INFO">Element 'xpath://p[text()=' Provide a valid Email id ']' is displayed.</msg>
+<status status="PASS" starttime="20220425 10:03:41.177" endtime="20220425 10:03:41.194"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220425 10:03:41.194" endtime="20220425 10:03:41.223"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.open('https://tempmailo.com/')</arg>
+<arg>window.open('${temp_mail_url}')</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220421 03:05:26.393" level="INFO">Executing JavaScript:
+<msg timestamp="20220425 10:03:41.224" level="INFO">Executing JavaScript:
 window.open('https://tempmailo.com/')
 Without any arguments.</msg>
-<status status="PASS" starttime="20220421 03:05:26.392" endtime="20220421 03:05:26.434"/>
+<status status="PASS" starttime="20220425 10:03:41.223" endtime="20220425 10:03:41.260"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220421 03:05:31.448" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220421 03:05:26.435" endtime="20220421 03:05:31.448"/>
+<msg timestamp="20220425 10:03:46.266" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220425 10:03:41.261" endtime="20220425 10:03:46.267"/>
 </kw>
-<status status="PASS" starttime="20220421 03:05:23.868" endtime="20220421 03:05:31.448"/>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220425 10:03:46.267" endtime="20220425 10:03:46.291"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${copy_button}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220425 10:03:46.292" endtime="20220425 10:03:46.361"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${copy_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220425 10:03:46.362" level="INFO">Clicking element 'css:.iconx'.</msg>
+<status status="PASS" starttime="20220425 10:03:46.361" endtime="20220425 10:03:46.399"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220425 10:03:46.399" endtime="20220425 10:03:46.421"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>CTRL+v</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220425 10:03:46.422" level="INFO">Sending key(s) ('CTRL+v',) to id:email element.</msg>
+<msg timestamp="20220425 10:03:46.853" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20220425 10:03:46.853" level="INFO">Sending key v</msg>
+<msg timestamp="20220425 10:03:46.853" level="INFO">Releasing special key CONTROL.</msg>
+<status status="PASS" starttime="20220425 10:03:46.421" endtime="20220425 10:03:46.877"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220425 10:03:51.888" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220425 10:03:46.877" endtime="20220425 10:03:51.889"/>
+</kw>
+<status status="PASS" starttime="20220425 10:03:37.482" endtime="20220425 10:03:51.890"/>
 </kw>
 <kw name="Verify the seller">
-<msg timestamp="20220421 03:05:31.452" level="FAIL">No keyword with name 'Verify the seller' found.</msg>
-<status status="FAIL" starttime="20220421 03:05:31.452" endtime="20220421 03:05:31.452"/>
+<msg timestamp="20220425 10:03:51.909" level="FAIL">No keyword with name 'Verify the seller' found.</msg>
+<status status="FAIL" starttime="20220425 10:03:51.909" endtime="20220425 10:03:51.910"/>
 </kw>
 <kw name="login as a seller">
-<status status="NOT RUN" starttime="20220421 03:05:31.458" endtime="20220421 03:05:31.458"/>
+<status status="NOT RUN" starttime="20220425 10:03:51.921" endtime="20220425 10:03:51.921"/>
 </kw>
 <kw name="Select the entity of the seller">
-<status status="NOT RUN" starttime="20220421 03:05:31.465" endtime="20220421 03:05:31.465"/>
+<status status="NOT RUN" starttime="20220425 10:03:51.930" endtime="20220425 10:03:51.930"/>
 </kw>
 <kw name="Fill the business information">
-<status status="NOT RUN" starttime="20220421 03:05:31.474" endtime="20220421 03:05:31.475"/>
+<status status="NOT RUN" starttime="20220425 10:03:51.943" endtime="20220425 10:03:51.944"/>
 </kw>
 <kw name="Fill the credibility information">
-<status status="NOT RUN" starttime="20220421 03:05:31.479" endtime="20220421 03:05:31.479"/>
+<status status="NOT RUN" starttime="20220425 10:03:51.953" endtime="20220425 10:03:51.953"/>
 </kw>
 <kw name="Fill the marketing information">
-<status status="NOT RUN" starttime="20220421 03:05:31.488" endtime="20220421 03:05:31.489"/>
+<status status="NOT RUN" starttime="20220425 10:03:51.960" endtime="20220425 10:03:51.960"/>
 </kw>
 <kw name="verify that seller is sucessfully onboarded">
-<status status="NOT RUN" starttime="20220421 03:05:31.496" endtime="20220421 03:05:31.497"/>
+<status status="NOT RUN" starttime="20220425 10:03:51.966" endtime="20220425 10:03:51.966"/>
 </kw>
 <kw name="Close the browser" library="Utility" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220421 03:05:31.498" endtime="20220421 03:05:34.821"/>
+<status status="PASS" starttime="20220425 10:03:51.968" endtime="20220425 10:03:54.158"/>
 </kw>
-<status status="PASS" starttime="20220421 03:05:31.497" endtime="20220421 03:05:34.822"/>
+<status status="PASS" starttime="20220425 10:03:51.967" endtime="20220425 10:03:54.159"/>
 </kw>
-<status status="FAIL" starttime="20220421 03:05:20.669" endtime="20220421 03:05:34.822">No keyword with name 'Verify the seller' found.</status>
+<status status="FAIL" starttime="20220425 10:03:34.593" endtime="20220425 10:03:54.160">No keyword with name 'Verify the seller' found.</status>
 </test>
 <test id="s1-t2" name="To check that buyer is able to register to the ofofo platform" line="33">
 <kw name="open the browser" library="Utility" type="SETUP">
@@ -235,49 +283,49 @@ Without any arguments.</msg>
 <arg>${browser_name}</arg>
 <arg>executable_path=../BrowserDrivers/${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220421 03:05:34.824" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220421 03:05:34.824" endtime="20220421 03:05:36.128"/>
+<msg timestamp="20220425 10:03:54.169" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220425 10:03:54.167" endtime="20220425 10:03:55.256"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220421 03:05:36.129" endtime="20220421 03:05:36.259"/>
+<status status="PASS" starttime="20220425 10:03:55.257" endtime="20220425 10:03:55.388"/>
 </kw>
-<status status="PASS" starttime="20220421 03:05:34.824" endtime="20220421 03:05:36.259"/>
+<status status="PASS" starttime="20220425 10:03:54.166" endtime="20220425 10:03:55.388"/>
 </kw>
 <kw name="Goto to buyer registration">
-<msg timestamp="20220421 03:05:36.263" level="FAIL">No keyword with name 'Goto to buyer registration' found. Did you mean:
+<msg timestamp="20220425 10:03:55.393" level="FAIL">No keyword with name 'Goto to buyer registration' found. Did you mean:
     SellerRegistrationPage.Goto To Seller Registration</msg>
-<status status="FAIL" starttime="20220421 03:05:36.263" endtime="20220421 03:05:36.263"/>
+<status status="FAIL" starttime="20220425 10:03:55.393" endtime="20220425 10:03:55.393"/>
 </kw>
 <kw name="Register by entering all the values" library="SellerRegistrationPage">
-<status status="NOT RUN" starttime="20220421 03:05:36.264" endtime="20220421 03:05:36.264"/>
+<status status="NOT RUN" starttime="20220425 10:03:55.393" endtime="20220425 10:03:55.393"/>
 </kw>
 <kw name="Verify the buyer">
-<status status="NOT RUN" starttime="20220421 03:05:36.267" endtime="20220421 03:05:36.267"/>
+<status status="NOT RUN" starttime="20220425 10:03:55.399" endtime="20220425 10:03:55.399"/>
 </kw>
 <kw name="login as a buyer">
-<status status="NOT RUN" starttime="20220421 03:05:36.272" endtime="20220421 03:05:36.272"/>
+<status status="NOT RUN" starttime="20220425 10:03:55.406" endtime="20220425 10:03:55.406"/>
 </kw>
 <kw name="Fill the company information">
-<status status="NOT RUN" starttime="20220421 03:05:36.277" endtime="20220421 03:05:36.277"/>
+<status status="NOT RUN" starttime="20220425 10:03:55.414" endtime="20220425 10:03:55.414"/>
 </kw>
 <kw name="Fill the business information">
-<status status="NOT RUN" starttime="20220421 03:05:36.284" endtime="20220421 03:05:36.284"/>
+<status status="NOT RUN" starttime="20220425 10:03:55.421" endtime="20220425 10:03:55.421"/>
 </kw>
 <kw name="Select the company persona">
-<status status="NOT RUN" starttime="20220421 03:05:36.290" endtime="20220421 03:05:36.290"/>
+<status status="NOT RUN" starttime="20220425 10:03:55.430" endtime="20220425 10:03:55.430"/>
 </kw>
 <kw name="verify that buyer is sucessfully onboarded">
-<status status="NOT RUN" starttime="20220421 03:05:36.293" endtime="20220421 03:05:36.293"/>
+<status status="NOT RUN" starttime="20220425 10:03:55.437" endtime="20220425 10:03:55.437"/>
 </kw>
 <kw name="Close the browser" library="Utility" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220421 03:05:36.294" endtime="20220421 03:05:38.452"/>
+<status status="PASS" starttime="20220425 10:03:55.438" endtime="20220425 10:03:57.625"/>
 </kw>
-<status status="PASS" starttime="20220421 03:05:36.293" endtime="20220421 03:05:38.452"/>
+<status status="PASS" starttime="20220425 10:03:55.438" endtime="20220425 10:03:57.625"/>
 </kw>
-<status status="FAIL" starttime="20220421 03:05:34.823" endtime="20220421 03:05:38.453">No keyword with name 'Goto to buyer registration' found. Did you mean:
+<status status="FAIL" starttime="20220425 10:03:54.164" endtime="20220425 10:03:57.627">No keyword with name 'Goto to buyer registration' found. Did you mean:
     SellerRegistrationPage.Goto To Seller Registration</status>
 </test>
 <test id="s1-t3" name="To check that admin is able to Approve the seller" line="43">
@@ -286,42 +334,42 @@ Without any arguments.</msg>
 <arg>${browser_name}</arg>
 <arg>executable_path=../BrowserDrivers/${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220421 03:05:38.454" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220421 03:05:38.454" endtime="20220421 03:05:39.513"/>
+<msg timestamp="20220425 10:03:57.637" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220425 10:03:57.636" endtime="20220425 10:03:58.725"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220421 03:05:39.514" endtime="20220421 03:05:39.643"/>
+<status status="PASS" starttime="20220425 10:03:58.725" endtime="20220425 10:03:58.837"/>
 </kw>
-<status status="PASS" starttime="20220421 03:05:38.454" endtime="20220421 03:05:39.643"/>
+<status status="PASS" starttime="20220425 10:03:57.634" endtime="20220425 10:03:58.837"/>
 </kw>
 <kw name="sign in as admin">
-<msg timestamp="20220421 03:05:39.647" level="FAIL">No keyword with name 'sign in as admin' found.</msg>
-<status status="FAIL" starttime="20220421 03:05:39.647" endtime="20220421 03:05:39.647"/>
+<msg timestamp="20220425 10:03:58.844" level="FAIL">No keyword with name 'sign in as admin' found.</msg>
+<status status="FAIL" starttime="20220425 10:03:58.844" endtime="20220425 10:03:58.844"/>
 </kw>
 <kw name="go to seller approval">
-<status status="NOT RUN" starttime="20220421 03:05:39.654" endtime="20220421 03:05:39.654"/>
+<status status="NOT RUN" starttime="20220425 10:03:58.852" endtime="20220425 10:03:58.852"/>
 </kw>
 <kw name="review the seller">
-<status status="NOT RUN" starttime="20220421 03:05:39.657" endtime="20220421 03:05:39.657"/>
+<status status="NOT RUN" starttime="20220425 10:03:58.855" endtime="20220425 10:03:58.855"/>
 </kw>
 <kw name="approve the seller">
-<status status="NOT RUN" starttime="20220421 03:05:39.661" endtime="20220421 03:05:39.661"/>
+<status status="NOT RUN" starttime="20220425 10:03:58.862" endtime="20220425 10:03:58.862"/>
 </kw>
 <kw name="sign in as seller">
-<status status="NOT RUN" starttime="20220421 03:05:39.665" endtime="20220421 03:05:39.665"/>
+<status status="NOT RUN" starttime="20220425 10:03:58.868" endtime="20220425 10:03:58.868"/>
 </kw>
 <kw name="verify the seller is approved">
-<status status="NOT RUN" starttime="20220421 03:05:39.671" endtime="20220421 03:05:39.671"/>
+<status status="NOT RUN" starttime="20220425 10:03:58.873" endtime="20220425 10:03:58.873"/>
 </kw>
 <kw name="Close the browser" library="Utility" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220421 03:05:39.672" endtime="20220421 03:05:42.840"/>
+<status status="PASS" starttime="20220425 10:03:58.874" endtime="20220425 10:04:00.991"/>
 </kw>
-<status status="PASS" starttime="20220421 03:05:39.672" endtime="20220421 03:05:42.840"/>
+<status status="PASS" starttime="20220425 10:03:58.874" endtime="20220425 10:04:00.991"/>
 </kw>
-<status status="FAIL" starttime="20220421 03:05:38.454" endtime="20220421 03:05:42.841">No keyword with name 'sign in as admin' found.</status>
+<status status="FAIL" starttime="20220425 10:03:57.632" endtime="20220425 10:04:00.993">No keyword with name 'sign in as admin' found.</status>
 </test>
 <test id="s1-t4" name="To check that admin is able to view the buyer and his the status of onboarding" line="51">
 <kw name="open the browser" library="Utility" type="SETUP">
@@ -329,36 +377,36 @@ Without any arguments.</msg>
 <arg>${browser_name}</arg>
 <arg>executable_path=../BrowserDrivers/${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20220421 03:05:42.843" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20220421 03:05:42.843" endtime="20220421 03:05:43.908"/>
+<msg timestamp="20220425 10:04:01.004" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220425 10:04:01.003" endtime="20220425 10:04:02.061"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220421 03:05:43.908" endtime="20220421 03:05:44.035"/>
+<status status="PASS" starttime="20220425 10:04:02.061" endtime="20220425 10:04:02.174"/>
 </kw>
-<status status="PASS" starttime="20220421 03:05:42.843" endtime="20220421 03:05:44.036"/>
+<status status="PASS" starttime="20220425 10:04:01.002" endtime="20220425 10:04:02.174"/>
 </kw>
 <kw name="sign in as admin">
-<msg timestamp="20220421 03:05:44.044" level="FAIL">No keyword with name 'sign in as admin' found.</msg>
-<status status="FAIL" starttime="20220421 03:05:44.044" endtime="20220421 03:05:44.044"/>
+<msg timestamp="20220425 10:04:02.178" level="FAIL">No keyword with name 'sign in as admin' found.</msg>
+<status status="FAIL" starttime="20220425 10:04:02.178" endtime="20220425 10:04:02.178"/>
 </kw>
 <kw name="go to buyer details">
-<status status="NOT RUN" starttime="20220421 03:05:44.055" endtime="20220421 03:05:44.055"/>
+<status status="NOT RUN" starttime="20220425 10:04:02.183" endtime="20220425 10:04:02.183"/>
 </kw>
 <kw name="check the buyer email and his status of onboarding">
-<status status="NOT RUN" starttime="20220421 03:05:44.062" endtime="20220421 03:05:44.062"/>
+<status status="NOT RUN" starttime="20220425 10:04:02.187" endtime="20220425 10:04:02.188"/>
 </kw>
 <kw name="Close the browser" library="Utility" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220421 03:05:44.063" endtime="20220421 03:05:46.219"/>
+<status status="PASS" starttime="20220425 10:04:02.188" endtime="20220425 10:04:04.347"/>
 </kw>
-<status status="PASS" starttime="20220421 03:05:44.062" endtime="20220421 03:05:46.219"/>
+<status status="PASS" starttime="20220425 10:04:02.188" endtime="20220425 10:04:04.347"/>
 </kw>
-<status status="FAIL" starttime="20220421 03:05:42.842" endtime="20220421 03:05:46.220">No keyword with name 'sign in as admin' found.</status>
+<status status="FAIL" starttime="20220425 10:04:00.999" endtime="20220425 10:04:04.349">No keyword with name 'sign in as admin' found.</status>
 </test>
 <doc>This file consists of all the System Test cases</doc>
-<status status="FAIL" starttime="20220421 03:05:20.430" endtime="20220421 03:05:46.221"/>
+<status status="FAIL" starttime="20220425 10:03:34.359" endtime="20220425 10:04:04.354"/>
 </suite>
 <statistics>
 <total>
